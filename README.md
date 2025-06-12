@@ -1,2 +1,9 @@
-# Othello-Board-Game
-This repository contains a Java implementation of the classic Othello board game. It includes core game logic such as move validation, token flipping, and player turn management, all handled within a configurable game board. The code supports both manual and AI-based player strategies.
+This project is a console-based implementation of the classic strategy game Othello (Reversi), written in Java using object-oriented programming principles. The program simulates the full gameplay experience of Othello, including alternating turns, move validation, disc flipping, and endgame detection. The code is organized, following best practices for modular Java design.
+
+The game logic is encapsulated primarily in the OthelloBoard class, which maintains the 8x8 board using a 2D character array. It handles all core gameplay functionality, such as checking for valid moves, applying flips in all eight directions, and determining when the game is over. Each move is represented using a Move class, which holds the row and column coordinates, making it easy to manage and pass around user input in a clean and scalable way.
+
+Encapsulation and separation of concerns are maintained throughout the codebase, with clearly defined responsibilities for each class. The board class includes methods for printing the board, checking for available moves, and applying game rules. The game alternates turns between two players ('X' and 'O'), automatically skipping a player's turn if they have no valid moves. The game ends when neither player can move, at which point the discs are counted and a winner is declared.
+
+This project is intended for educational purposes and provides a strong foundation for future extensions, such as graphical user interfaces or AI opponents. It demonstrates an understanding of Java syntax, control structures, classes, and method design, as well as the ability to translate a real-world board game into a functioning software simulation.
+
+To run the program, compile the Java files using javac and execute the main() method inside the OthelloBoard class. The main method currently includes test cases and sample moves that illustrate how the board state evolves after each turn. This implementation emphasizes correctness, clarity, and extensibility, making it suitable for further development or integration into larger projects.
